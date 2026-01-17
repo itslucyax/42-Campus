@@ -1,0 +1,41 @@
+# Configuraciones de editor
+*.code-workspace
+.vscode/
+.idea/
+
+# Archivos compilados
+*.o
+*.a
+*.out
+*.exe
+*.dSYM/
+
+# Ejecutables de test
+a.out
+test
+tester
+
+# MacOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.swp
+
+# Carpetas de tests de terceros
+libft-unit-test/
+libftTester/
+francinette/
+war-machine/
+
+# Logs
+*.log
+vgcore.*
+
+# Temporales
+tmp/
+temp/
+.cache/
