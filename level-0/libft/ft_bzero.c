@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 01:00:49 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 01:00:49 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:41:56 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 ** n - numero de bytes a poner a cero
 ** No devuelve nada (void)
 */
-#include "libft"
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {

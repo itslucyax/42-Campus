@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 01:19:32 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 01:19:32 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:48:46 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,12 @@
 
 void	*ft_memmove(void *dst, const void *src, sizr_t len)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
-	
+
 	if (!dst && !src)
 		return (NULL);
-	d = (unsigned char*)dst;
+	d = (unsigned char *)dst;
 	s = (const unsigned char *)src;
 	if (d > s)
 	{

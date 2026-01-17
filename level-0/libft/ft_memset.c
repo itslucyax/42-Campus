@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 00:53:26 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 00:53:26 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:50:00 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft"
 
 /* ft_memset - Rellena un bloque de memoria con un byte especifico
 **
@@ -28,8 +27,8 @@
 
 void	*ft_memset(void *b, size_t len)
 {
-	unsigned char *ptr;
-	size_t	i;
+	unsigned char	*ptr;
+	size_t			i;
 
 	ptr = (unsigned char *)b;
 	i = 0;

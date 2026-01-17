@@ -1,16 +1,23 @@
-#include "libft"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/17 11:57:06 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/17 12:01:48 by luciamar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-size_t ft_strlen(const char *s)
+#include "libft.h"
+
+size_t	ft_strlen(const char *s)
 {
-    size_t i;
+	size_t	i;
 
-    i = 0;
-    while (s[i] != '\0')//mientras mi string en posicion i sea diferente de caracter nulo
-        i++;
-    return (i);//devuelvo nuemero de caracteres de la cadena
-    
+	i = 0;
+	while (s[i] != '\0')
+		i++;
+	return (i);
 }
-
-size_t i;
-i = -1;
-while (s[++i]);

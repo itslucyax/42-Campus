@@ -1,8 +1,20 @@
-#include "libft"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/17 12:00:03 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/17 12:04:01 by luciamar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_toupper(int c)
+#include "libft.h"
+
+int	ft_toupper(int c)
 {
-    if (c >= 'a' && c <= 'z')
-        return (c - 32)//minus-32=mayus
-    return (c);//si no, devuelve sin cambios
+	if (c >= 'a' && c <= 'z')
+		return (c - 32);
+	return (c);
 }

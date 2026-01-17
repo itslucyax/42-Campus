@@ -1,20 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lower.c                                         :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/17 11:45:16 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 11:45:52 by luciamar         ###   ########.fr       */
+/*   Created: 2026/01/17 12:07:26 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/17 12:07:55 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int c)
+char	*ft_strrchr(const char *s, int c)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
+	const char	*last;
+
+	last = NULL;
+	while (*s != '\0')
+	{
+		if (*s == (char)c)
+			last = s;
+		s++;
+	}
+	if (*s == (char)c)
+		return ((char *)s);
+	return ((char *)last);
 }

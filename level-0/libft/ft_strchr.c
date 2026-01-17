@@ -1,14 +1,26 @@
-#include "libft"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/17 11:51:03 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/17 11:56:44 by luciamar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-char    *ft_strchr(const char *s, int c)
+#include "libft.h"
+
+char	*ft_strchr(const char *s, int c)
 {
-    while (*s != '\0') && (*s != c)
-    {
+	while ((*s != '\0') && (*s != c))
+	{
 		s++;
 	}
-    if (*s == c)
+	if (*s == c)
 	{
 		return ((char *)s);
 	}
-    return ((char*)NULL);
+	return ((char *) NULL);
 }

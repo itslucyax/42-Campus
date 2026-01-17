@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 01:12:49 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 01:12:49 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:47:40 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 /* ft_memcpy - Copia n bytes de src a dst
 **
@@ -25,9 +24,9 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char *d;
-	const unsigned char *s;
-	size_t	i;
+	unsigned char		*d;
+	const unsigned char	*s;
+	size_t				i;
 
 	if (!dst && !src)
 		return (NULL);
@@ -41,4 +40,3 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
-
