@@ -6,7 +6,7 @@
 /*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/17 00:53:26 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/17 11:50:00 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/27 19:32:54 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,9 @@
 ** len - numero de bytes a escribir
 ** Devuelve puntero original b
 */
+#include "libft.h"
 
-void	*ft_memset(void *b, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
 	unsigned char	*ptr;
 	size_t			i;

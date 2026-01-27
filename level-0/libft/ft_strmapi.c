@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 16:57:19 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/27 16:57:19 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/27 19:48:42 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	resultado = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!resultado)
-		return(NULL);
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{
@@ -43,5 +43,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		i++;
 	}
 	resultado[i] = '\0';
-	return (resultado)
+	return (resultado);
 }

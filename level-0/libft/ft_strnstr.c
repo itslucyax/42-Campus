@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luciamar <luciamar@student.42urduliz.co    +#+  +:+       +#+        */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 20:32:22 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/19 20:32:22 by luciamar         ###   ########.fr       */
+/*   Updated: 2026/01/27 19:50:24 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	i = 0;
-
 	while (haystack[i] != '\0' && i < len)
 	{
 		j = 0;
@@ -46,5 +45,4 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		}
 		return (NULL);
 	}
-	
 }

@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   libt.h                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/27 19:46:30 by luciamar          #+#    #+#             */
-/*   Updated: 2026/01/27 19:46:31 by luciamar         ###   ########.fr       */
+/*   Created: 2026/01/27 20:02:17 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/27 20:05:33 by luciamar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifdef LIBFT_H
+# define LIBFT_H
 
-/* Escribe string seguido de \n en archivo descriptor
-Envia el string s al archivo dado seguido de un salto de linea
+# include <unistd.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <fcntl.h>
+# include <stdarg.h>
+# include <stdio.h>
 
-s - el string que escribes
-fd - archivo descriptor donde se escribe
-
-DEVUELVE void
-*/
-
-void	ft_putendl_fd(char *s, int fd)
+typedef struct s_list
 {
-	if (!s)
-		return ;
-	ft_putstr_fd(s, fd);
-	ft_putchar_fd('\n', fd);
-}
+	void			*content;
+	struct s_list	*next;
+}	t_list;
+
+#endif

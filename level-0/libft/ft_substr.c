@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/27 19:47:00 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/27 19:51:09 by luciamar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 /* Extrae una subcadena de un string
@@ -23,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
-		return(ft_substr(""));
+		return (ft_substr(""));
 	if (len > s_len - start)
 		len = s_len - start;
 	substr = (char *)malloc(sizeof(char) * (len + 1));
@@ -36,5 +48,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 	}
 	substr[i] = '\0';
-	return (substr);	
+	return (substr);
 }

@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: luciamar <luciamar@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/27 19:46:45 by luciamar          #+#    #+#             */
+/*   Updated: 2026/01/27 19:48:32 by luciamar         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 /* Aplica una funcion a cada caracter modificando inplace
@@ -19,5 +31,5 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	{
 		f(i, &s[i]);
 		i++;
-	}	
+	}
 }
